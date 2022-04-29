@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesmobile.css">
+        <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+        <!-- From JQuery -->
+
+        <script src="js/scripts.js" type="text/javascript"></script>
+    
+        <title>Pamela's Diner</title>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="top-row">
+                <a href="index.html">
+                    <img height="100" width="100" src="images/Pamela's Logo.webp"/>
+                </a>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="location.html">Locations</a>
+                    <a href="order-online.html">Order Online</a>
+                    <a class="selected" href="contact.html">Contact</a>
+                </nav>
+            </div>
+
+        </div>
+
+        <div id="content">
+            <table>
+                <tr>
+                    <th colspan="2">How To Contact Us</th>
+                </tr>
+                <tr>
+                    <th>Method of Contact</th>
+                    <th>Address/Number</th>
+                </tr>
+                <tr onmouseover="showDescription('drop a letter or talk at 3703 Forbes Ave, Pittsburgh, PA 15213');" onmouseout="hideDescription();">
+                    <td>In Person</td>
+                    <td>3703 Forbes Ave, Pittsburgh, PA 15213</td>
+                </tr>
+                <tr onmouseover="showDescription('call 412-683-4066');" onmouseout="hideDescription();">
+                    <td>Phone Number</td>
+                    <td>412-683-4066</td>
+                </tr>
+                <tr onmouseover="showDescription('send an email to pam@pamelasdiner.com');" onmouseout="hideDescription();">
+                    <td>Email</td>
+                    <td>pam@pamelasdiner.com</td>
+                </tr>
+            </table>
+            <h1 style="text-align:center;">Contact Form</h1>
+            <form onsubmit="return checkValid()" action="mailto:pam@pamelasdiner.com">
+                <fieldset>
+                    <label for="uname">Name:</label><br>
+                    <input type="text" id="name" name="name" value="" maxlength="250" size="20" required><br>
+                    <label for="zip">Zip Code (optional):</label><br>
+                    <input type="text" id="zip" name="zip" value="" maxlength="250" size="10"><br>
+                    <label for="e">email:</label><br>
+                    <input type="email" id="e" name="e" value="" maxlength="250" size="25" required><br><br>
+
+                    <label for="signup">Would you like to be subscribed to Pamela's newsletter?</label> <br>
+                    <input type="checkbox" id="signup" name="signup" value="yes"> Yes, I would like to subscrube <br><br>
+
+                    <input type ="image" src="images/submit.png" alt="Submit" name= "btnimage">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+
+    <footer>
+        <a href="mailto:pam@pamelasdiner.com"><img src="images/email.png" alt="email"></a>
+        <a href="https://www.facebook.com/pamelasdiner/"><img src="images/facebook.png" alt="facebook"></a>
+        <div class="container">
+            Wed, Th 10a.m. to 2p.m., Fri, Sat, Sun 8a.m. to 4p.m.<br/>
+            3703 Forbes Ave.<br/>
+            &copy; Pamela's Diner
+        </div>
+    </footer> 
+</html>

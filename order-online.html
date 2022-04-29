@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <head>
+            <link rel="stylesheet" type="text/css" href="css/styles.css">
+            <link rel="stylesheet" type="text/css" href="css/stylesmobile.css">
+            <script src="js/scripts.js" type="text/JavaScript"></script>
+            <!-- From JQuery -->
+            <title>Pamela's Diner</title>
+        </head>
+        
+       <script>
+            $(function() {
+                $( "#accordion" ).accordion();
+            });
+        </script>
+   
+    </head>
+    <body>
+        <div id="container">
+            <div id="top-row">
+                <a href="index.html">
+                    <img height="100" width="100" src="images/Pamela's Logo.webp"/>
+                </a>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="location.html">Locations</a>
+                    <a class="selected" href="order-online.html">Order Online</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        
+            <div id="content">
+                <img id="sideRight" height="260" width="375" alt="Image of Hotcakes" src="https://roadfood.com/wp-content/uploads/2016/09/Pamelas-strawberry-pancakes-1.jpg">
+                <div id="locationSelect">
+                    <h1>Order Online</h1>
+                    <h3>Choose Location:</h3>
+                    <div>
+                        <a href="https://www.toasttab.com/pamelas-diner-shadyside-5527-walnut-st/v3">Shadyside</a><br><br>
+                        <a href="https://www.toasttab.com/pamelas-diner-mt-lebanon-427-washington-road/v3">Mt. Lebanon</a><br><br>
+                        <a href="https://www.toasttab.com/pamela-s-diner-strip-district-60-21st-street/v3">Strip District</a>
+                    </div>
+                </div>
+            </div>
+            
+            <footer>
+                <a href="mailto:pam@pamelasdiner.com"><img src="images/email.png" alt="email"></a>
+                <a href="https://www.facebook.com/pamelasdiner/"><img src="images/facebook.png" alt="facebook"></a>
+                <div class="container">
+                    Wed, Th 10a.m. to 2p.m., Fri, Sat, Sun 8a.m. to 4p.m.<br/>
+                    3703 Forbes Ave.<br/>
+                    &copy; Pamela's Diner
+                </div>
+            </footer>    
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesmobile.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.lightbox.css">
+
+        <!-- From JQuery -->
+        <script src="js/jquery.lightbox.js" type="text/JavaScript"></script>
+        <script src="js/scripts.js" type="text/JavaScript"></script>
+        
+        <title>Pamela's Diner</title>
+
+        <script>
+            $(function() {
+                    $('#gallery a').lightBox();
+                });
+        </script>
+
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="top-row">
+                <a href="index.html">
+                    <img height="100" width="100" src="images/Pamela's Logo.webp"/>
+                </a>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a class="selected" href="menu.html">Menu</a>
+                    <a href="location.html">Locations</a>
+                    <a href="order-online.html">Order Online</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+
+            <div id="content">
+                <div id="sideLeft">
+                    <img height="260" width="375" alt="Image of Hotcakes" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt2Pm4NXAnKvBiRqFWunsUe6yRroLmIzps6g&usqp=CAU"><br>
+                    <div id="centerSideLeft">
+                        <a href="order-online.html">Order Online</a>
+                    </div>
+                </div>
+                <div id="locationSelect">
+                    <h1>Menus Vary By Location</h1>
+                    <h3>Choose Location:</h3>
+                    <div>
+                        <a href="https://www.pamelasdiner.com/_files/ugd/fa9060_d7dd1df889ae4c2fbc8db6bdc8fc2523.pdf">Shadyside</a><br><br>
+                        <a href="https://www.pamelasdiner.com/_files/ugd/fa9060_d475c0e3d8b04eb29a188fbd4fc08e18.pdf">Mt. Lebanon</a><br><br>
+                        <a href="https://www.pamelasdiner.com/_files/ugd/fa9060_b2e86fc45c544ccfaae6052be40e819a.pdf">Strip District</a><br><br>
+                        <a href="https://www.pamelasdiner.com/_files/ugd/fa9060_d7dd1df889ae4c2fbc8db6bdc8fc2523.pdf">Squirrel Hill</a><br><br>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer>
+                <a href="mailto:pam@pamelasdiner.com"><img src="images/email.png" alt="email"></a>
+                <a href="https://www.facebook.com/pamelasdiner/"><img src="images/facebook.png" alt="facebook"></a>
+                <div class="container">
+                    Wed, Th 10a.m. to 2p.m., Fri, Sat, Sun 8a.m. to 4p.m.<br/>
+                    3703 Forbes Ave.<br/>
+                    &copy; Pamela's Diner
+                </div>
+            </footer> 
+    </div>
+    </body>
+</html>
